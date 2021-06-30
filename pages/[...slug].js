@@ -22,6 +22,10 @@ export default function Home() {
           HELLO in {router.locale} is <br/>"{hello[router.locale]}"
         </h1>
 
+        <pre>
+          Doc Slug: <b>{router.query.slug?.join('/')}</b>
+        </pre>
+
         
       </main>
 
