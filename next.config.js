@@ -6,12 +6,6 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/en',
-        destination: '/',
-        permanent: false,
-        locale: false
-      },
-      {
         source: '/en/:path*',
         destination: '/:path*',
         permanent: false,
