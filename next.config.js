@@ -9,8 +9,7 @@ module.exports = {
       {
         source: '/en',
         destination: '/',
-        permanent: false,
-        locale: false
+        permanent: false
       },
       {
         source: '/en/:path*',
