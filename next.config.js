@@ -2,8 +2,7 @@ module.exports = {
   trailingSlash: true,
   i18n: {
     locales: ['en', 'fr', 'de'],
-    defaultLocale: 'en',
-    localeDetection: false
+    defaultLocale: 'en'
   },
   async redirects() {
     return [
