@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: true,
   i18n: {
     locales: ['en', 'fr', 'de'],
     defaultLocale: 'en',
@@ -7,15 +8,16 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/en',
+        source: '/en/',
         destination: '/',
-        permanent: false
+        permanent: false,
+        locale: false
       },
-      {
-        source: '/en/:path*',
-        destination: '/:path*',
-        permanent: false
-      },
+      // {
+      //   source: '/en/:path*',
+      //   destination: '/:path*',
+      //   permanent: false
+      // },
     ]
   }
 }
