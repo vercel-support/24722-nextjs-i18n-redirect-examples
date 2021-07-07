@@ -11,8 +11,11 @@ export default function Home() {
   }
   console.log({router})
 
-  if (router.locale === 'en') {
+  const redirect = typeof(window) === 'object' && router.locale === 'en' && document.location.pathname === '/en'
+  
+  if (redirect) {
     router.replace('/')
+    return <></>
   } else {
     return (
       <div className={styles.container}>
